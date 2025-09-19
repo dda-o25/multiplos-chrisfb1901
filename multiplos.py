@@ -15,15 +15,13 @@ numero1 = int(input("Introduce un número:"))
 numero2 = int(input("Introduce otro número:"))
 
 # Proceso
-
-if numero2==0:
-    print("No se puede hacer una división entre 0")
+if numero2 != 0 and numero1 % numero2 == 0:
+    print("El número", numero1, "es múltiplo del",numero2)
+elif numero1 != 0 and numero2 % numero1 == 0:
+   print("El número", numero2, "es múltiplo del",numero1)
+# Salidas 
 else:
-    residuo=numero1 % numero2
+    print("Ninguno de los números es múltiplo del otro")
 
-# Salidas
-    if residuo==0:
-        print("El", numero1, "es múltiplo de", numero2)
-    else:
-        print("Ninugno de los números es múltiplo de otro.")
 
+    
